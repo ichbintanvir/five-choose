@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>five choose</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="hero">
+        <h1 class="quote">Select Your Best Five</h1>
+        <p class="quote-details">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+            officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+            nostrud amet.</p>
+    </header>
+    <section class="main">
+        <div id="card-section" class="card-section">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd1wiyMsx2ZNSeQ8llMSRPYJZLgECAJceWMA&usqp=CAU"
+                        alt="image">
+                </div>
+                <div class="card-info">
+                    <h2 id="title">Lionel Messi</h2>
+                    <button class="btn">SELECT</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img class="img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNS2Jj34R5nxIKq8zSbMrAKCVm-nN9EUPAxw&usqp=CAU"
+                        alt="image">
+                </div>
+                <div class="card-info">
+                    <h2 id="title">Cristiano Ronaldo</h2>
+                    <button class="btn">SELECT</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img class="img"
+                        src="https://www.psg.fr/media/184662/neymar-jr.jpeg?anchor=center&mode=crop&width=1200&height=675&quality=75"
+                        alt="image">
+                </div>
+                <div class="card-info">
+                    <h2 id="title">Neymer Jr.</h2>
+                    <button class="btn">SELECT</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img class="img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWtVWXDxwGysl4ywnhvsvVzV1iho9UFtBBBQ&usqp=CAU"
+                        alt="image">
+                </div>
+                <div class="card-info">
+                    <h2 id="title">Mesut Ozil</h2>
+                    <button class="btn">SELECT</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img class="img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvmbdy5jz_mbjeIrU6VLgE3b4C0HvWiU_jXw&usqp=CAU"
+                        alt="image">
+                </div>
+                <div class="card-info">
+                    <h2 id="title">Mohammad Salah</h2>
+                    <button class="btn">SELECT</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img class="img"
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/210622101406-02-sadio-mane-file-0516.jpg?q=w_3000,h_2054,x_0,y_0,c_fill"
+                        alt="image">
+                </div>
+                <div class="card-info">
+                    <h2 id="title">Sadio Mane</h2>
+                    <button class="btn">SELECT</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img class="img" src="https://pbs.twimg.com/media/FAyHybzXsAYnzHq.jpg:large" alt="image">
+                </div>
+                <div class="card-info">
+                    <h2 id="title">Son</h2>
+                    <button class="btn">SELECT</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img class="img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmAPgmj5b4TRvpKqdVYmIMqbH7DSIY8CoATg&usqp=CAU"
+                        alt="image">
+                </div>
+                <div class="card-info">
+                    <h2 id="title">Pogba</h2>
+                    <button class="btn">SELECT</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img class="img"
+                        src="https://thumbs.dreamstime.com/b/german-professional-footballer-toni-kroos-kyiv-ukraine-%C3%A2%E2%82%AC-may-german-professional-footballer-toni-kroos-final-match-117597327.jpg"
+                        alt="image">
+                </div>
+                <div class="card-info">
+                    <h2 id="title">Kroos</h2>
+                    <button class="btn">SELECT</button>
+                </div>
+            </div>
+        </div>
+        <div class="select-budget-section">
+            <div class="select">
+                <h2 id="title">Selected - V</h2>
+                <ol id="order-list"></ol>
+            </div>
+            <div class="budget">
+                <h2 id="title">Budget</h2>
+                <div class="per-player flex">
+                    <div>
+                        <p>Per Player</p>
+                    </div>
+                    <div>
+                        <input id="per-player" type="number">
+                    </div>
+                </div>
+                <button id="calculate" class="btn">Calaculate</button>
+                <div class="per-player flex">
+                    <div>
+                        <p>Player Expenses</p>
+                    </div>
+                    <div>
+                        <p>$<span id="player-total-amount">00</span></p>
+                    </div>
+                </div>
+                <div class="per-player flex">
+                    <div>
+                        <p>Manager</p>
+                    </div>
+                    <div>
+                        <input id="manager-expense" type="number">
+                    </div>
+                </div>
+                <div class="per-player flex">
+                    <div>
+                        <p>Coach</p>
+                    </div>
+                    <div>
+                        <input id="coach-expense" type="number">
+                    </div>
+                </div>
+                <button id="calculate-total" class="btn">Calaculate Total</button>
+                <div class="per-player flex">
+                    <div>
+                        <p>Total</p>
+                    </div>
+                    <div>
+                        <p id="all-amount">$<span id="all">00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/budget.js"></script>
+    <script src="js/select.js"></script>
+</body>
+
+</html>
